@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Codidact - Helping each other learn.</title>
+        <meta
+            name="description"
+            content="Codidact is an open-source, community-controlled Q&amp;A platform. Currently under active development. Contribute by joining our team."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="icon.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+        <!-- Matomo -->
+        <script type="text/javascript">
+            var _paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["trackPageView"]);
+            _paq.push(["enableLinkTracking"]);
+            (function() {
+                var u = "//analytics.codidact.org/";
+                _paq.push(["setTrackerUrl", u + "matomo.php"]);
+                _paq.push(["setSiteId", "2"]);
+                var d = document,
+                    g = d.createElement("script"),
+                    s = d.getElementsByTagName("script")[0];
+                g.type = "text/javascript";
+                g.async = true;
+                g.defer = true;
+                g.src = u + "matomo.js";
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+
+        <!-- Markdown -->
+        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.9.1/dist/showdown.min.js"></script>
+    </head>
+
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+            </p>
+        <![endif]-->
+        <header class="header row is-full-width">
+        	<!--logo-->
+            <img src="assets/img/logo-codidact.svg"  class="header__logo" alt="Codidact logo" width="180" >
+            <div class="header__links" >   
+                <a href="https://github.com/codidact" class="header__links github" width="65" > Github </a>
+                <a href="https://github.com/codidact/docs/wiki" class="header__links wiki" width="39" > Wiki </a>
+                <a href="https://meta.codidact.com" class="header__links meta" width="47" > Meta </a>
+                <a href="https://discord.gg/WZ7aTst" class="header__links discord" width="73" > Discord </a>
+            </div>
+        </header>
+
+        <section class="row is-full-width hero">
+            <div class="content-wrapper has-2-columns">
+                <div class="container hero__text">
+                    <h1 class="heading--primary">The Open Source Q&amp;A Platform.</h1>
+                    <p class="heading--tertiary">For the community.</p>
+                    <p class="heading--tertiary">By the community.</p>
+                    <p class="heading--tertiary"><a href="https://codidact.com/">Join our communities</a></p>
+                </div>
+                <div class="container hero__image">
+                    <img src="assets/img/brand-mark.svg" class="large-brand-mark" alt="large Codidact brand mark" />
+                </div>
+            </div>
+            <svg
+                class="hero--angle"
+                width="1439"
+                height="160"
+                viewBox="0 0 1440 160"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path d="M0 0L1440 160H0V0Z" fill="white" />
+            </svg>
+        </section>
+        <section class="row content-wrapper what-is-codidact">
+            <h2 class="heading--secondary">What is Codidact?</h2>
+            <p>
+                <strong>Ever had a question? Ever had an answer? Ever had knowledge to share?</strong>
+                We believe that coming together to inquire and learn, to share knowledge and to teach each other,
+                makes the world a better place. We also believe that Q&amp;A communities should be free from the politics
+                and shenanigans of private, profit-focused companies.
+            </p>
+        </section>
+        <section class="row is-full-width community-first">
+            <div class="content-wrapper">
+                <h3 class="heading--secondary">Community First</h3>
+                <p>
+                    Our goal is to build an open-source platform for community-driven Q&amp;A sites.
+                    We aim to welcome beginners and experts alike and to empower communities of learners and teachers.
+                    We'll fund it by seeking donations, not by paywalls, and work with individual communities that want to join us.
+                </p>
+            </div>
+        </section>
+        <section class="row content-wrapper call-to-action">
+            <p>
+                Ultimately, we are all looking for answers to life's big &mdash; and little &mdash; questions.
+                We want to build an amazing platform that makes it easier to ask questions
+                and curate answers in a non-hostile environment,
+                so you can get to the answers you need, without the fuss.
+            </p>
+            <p>
+                <strong>Whether it’s a question about Python or pythons, we want Codidact to have you covered.</strong>
+            </p>
+        </section>
+        <section class="row content-wrapper get-involved">
+            <h3 class="heading--secondary">Get Involved</h3>
+            <div class="container">
+                <a class="card card--link github" href="https://github.com/codidact" target="_blank" title="GitHub">
+                    <header>
+                        <img
+                            src="assets/img/3rd-party/logo-github-white.svg"
+                            class="card__logo"
+                            alt="Github logo"
+                            width="60"
+                            height="60"
+                        />
+                    </header>
+                    <h4 class="card__heading">GitHub</h4>
+                    <p class="card__text">
+                        All of the Codidact code is hosted on Github. Codidact is open-source &mdash; PRs are welcomed.
+                    </p>
+                </a>
+                <a
+                    class="card card--link wiki"
+                    href="https://github.com/codidact/docs/wiki"
+                    target="_blank"
+                    title="Wiki"
+                >
+                    <header>
+                        <img
+                            src="assets/img/3rd-party/logo-wiki-white.svg"
+                            class="card__logo"
+                            alt="Wiki logo"
+                            width="99"
+                            height="36"
+                        />
+                    </header>
+                    <h4 class="card__heading">Wiki</h4>
+                    <p class="card__text">
+                        For more in-depth information please use our wiki. You can also find approved decisions for the
+                        project here.
+                    </p>
+                </a>
+                <a
+                    class="card card--link meta"
+                    href="https://meta.codidact.com"
+                    target="_blank"
+                    title="Meta"
+                >
+                    <header>
+                        <img
+                            src="assets/img/3rd-party/logo-meta.svg"
+                            class="card__logo"
+                            alt="Meta logo"
+                            height="60"
+                        />
+                    </header>
+                    <h4 class="card__heading">Meta</h4>
+                    <p class="card__text">
+                        Discussions about our project and communities happen on our Meta site.
+                    </p>
+                </a>
+
+                <a
+                    class="card card--link discord"
+                    href="https://discord.gg/WZ7aTst"
+                    target="_blank"
+                    title="Discord (chat)"
+                >
+                    <header>
+                        <img
+                            src="assets/img/3rd-party/logo-discord-white.svg"
+                            class="card__logo"
+                            alt="Discord logo"
+                            width="70"
+                            height="70"
+                        />
+                    </header>
+                    <h4 class="card__heading">Chat</h4>
+                    <p class="card__text">
+                        For more on-the-go discussion and to get more involved in the day-to-day at Codidact, join the
+                        Discord channel.
+                    </p>
+                </a>
+            </div>
+        </section>
+        <section class="row content-wrapper what-is-codidact">
+            <h2 class="heading--secondary">Join our mailing list</h2>
+            <div>
+                <form class="js-form" action="subscribe.php" method="POST">
+                    <input
+                        type="email"
+                        class="js-email-input"
+                        name="mail_input"
+                           placeholder="email@example.com"
+                    />
+                    <p class="js-form-response"></p>
+                    <div class="loader">
+                        <div class="bar"></div>
+                    </div>
+                    <button class="has-top-small-margin js-submit-button" disabled>Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section class="row content-wrapper">
+            <h2 class="heading--secondary">Frequently Asked Questions</h2>
+            <div id="faq">
+                <!--script src="https://gist.github.com/ArtOfCode-/b6088cc5ad9c98d4dfa9f16e234a1f85.js"></script-->
+                <script>
+'use strict';
+
+const md_source_doc_location = 'https://raw.githubusercontent.com/codidact/docs/master/User-Help/CodidactMainPageFAQ.md';
+
+function parse_md(input) {
+    const converter = new showdown.Converter();
+    return converter.makeHtml(input);
+}
+
+const md_doc_XML_HTTP_request = new XMLHttpRequest();
+
+md_doc_XML_HTTP_request.onreadystatechange = function (data) {
+    if (data.target.readyState == 4 /* complete */) {
+        const response_text = data.target.responseText;
+        const parsed = parse_md(response_text);
+        const faq_div = document.querySelector('div#faq');
+        const span = document.createElement('span');
+        span.innerHTML = parsed;
+        faq_div.appendChild(span);
+    }
+}
+
+md_doc_XML_HTTP_request.open('GET', md_source_doc_location);
+
+md_doc_XML_HTTP_request.send();
+                </script>
+            </div>
+        </section>
+        <footer class="footer row is-full-width">
+            <img src="assets/img/logo-codidact-white.svg" class="footer__logo" alt="Codidact logo" width="170" />
+            <p class="tagline">The open source Q&amp;A platform.</p>
+        </footer>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
