@@ -1,75 +1,65 @@
 @import "variables.scss";
+$animate: all 0.2s ease-in-out;
 
-.header {
-    padding-bottom: $gutter;
-    padding-top: $gutter;
-    text-align: center;
+.header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 4%;
+    padding-left: 5%;
 
-    .header__links,
-    .header__logo {
-        vertical-align: top;
-        position: relative;
-    }
-
-    .header__links {
-        position: relative;
-
-        .header__link {
-            margin: 0 10px;
-            vertical-align: top;
-            position: relative;
-            top: 8px;
-        }
-
-        img {
-            height: 35px;
-            width: auto;
-            position: relative;
-        }
-
-        .header__link.is-discourse {
-            margin-left: 16px;
-        }
-
-        .header__link.is-meta {
-            margin-left: 16px;
-        }
-
-        .header__link.is-discord {
-            top: 6px;
-            margin-right: 5px;
-
-            img {
-                height: 42px;
-            }
-        }
-
-        .header__link.is-github {
-            top: 5px;
-
-            img {
-                height: 45px;
-            }
-        }
-    }
-
-    .header__logo {
-        height: auto;
+    &__logo{
         width: 180px;
     }
 
-    @include for-tablet-landscape-up {
-        text-align: left;
-
-        .header__links,
-        .header__logo {
-            display: inline-block;
-            margin: 0;
+    &__links{
+        color: black;
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        letter-spacing: 0.09em;
+        font-weight: 500;
+        font-family: Red Hat Display;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        
+        &.github{
+            height: 24px;
+            left: calc(80% - 6px/2 + 0.5px);
+            top: calc(50% - 24px/2);
+            &:hover{
+                border-bottom: 1px solid #453886;
+            }
         }
 
-        .header__links {
-            float: right;
-            top: -6px;
+        &.wiki{
+            height: 24px;
+            left: calc(80% - 4px/2);
+            top: calc(50% - 24px/2);
+            &:hover{
+                border-bottom: 1px solid #453886;
+            }
+        }
+
+        &.meta{
+            height: 24px;
+            left: calc(80% - 3px/2 - 0.5px);
+            top: calc(50% - 24px/2);
+            &:hover{
+                border-bottom: 1px solid #453886;
+            }
+        }
+
+        &.discord{
+            height: 24px;
+            left: calc(80% - 1px/2);
+            top: calc(50% - 24px/2);
+            &:hover{
+                border-bottom: 1px solid #453886;
+            }
         }
     }
 }
